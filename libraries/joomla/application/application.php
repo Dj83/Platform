@@ -280,7 +280,7 @@ class JApplication extends JObject
 
 		foreach ($result as $key => $value)
 		{
-			JInput::set($key, $value);
+			$this->input->set($key, $value);
 		}
 
 		// Trigger the onAfterRoute event.
